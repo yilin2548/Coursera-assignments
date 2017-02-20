@@ -1,0 +1,79 @@
+/** HEADER **/
+#header-nav {
+  background-color: #6699ff;
+  border-radius: 0;
+  border: 0;
+}
+
+.navbar-brand {
+  padding-top: 25px;
+}
+
+.navbar-brand h1 { /* Restaurant name */
+  font-family: 'Lora', serif;
+  color: #ffe066;
+  font-size: 1.5em;
+  font-weight: bold;
+  text-shadow: 1px 1px 1px #222;
+  margin-top: 0;
+  margin-bottom: 0;
+  line-height: .75;
+}
+.navbar-brand a:hover, .navbar-brand a:focus {
+  text-decoration: none;
+}
+
+#nav-list {
+  margin-top: 0px;
+  margin-bottom: 0px;
+  background: #e6ccff;
+}
+#nav-list a {
+  color: #000099;
+  text-align: center;
+}
+#nav-list a:hover {
+  background: #d65cad;
+}
+#nav-list a {
+  font-family: "Comic Sans MS", cursive, sans-serif;
+  font-size: 1.4em;
+}
+#nav-list hr {
+  margin-top: 0px;
+  margin-bottom: 0px;;
+}
+
+.navbar-header button.navbar-toggle, .navbar-header .icon-bar {
+  border: 1px solid #ffffff;
+}
+.navbar-header button.navbar-toggle {
+  clear: both;
+  margin-top: -30px;
+}
+/* END HEADER */
+
+#menu-categories-title{
+  margin-bottom: 30px;
+  font-family: Impact, Charcoal, sans-serif;
+}
+
+div#rect{
+  background-color: #cceeff;
+  padding: 10px;
+  margin: 5px;
+}
+
+
+#rect p{
+  margin-top: 10px;
+  font-size: 1.6em;
+  font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+  text-align: center;
+}
+
+#rect section {
+  clear: right;
+  margin: 5 10 5 10px;
+  font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+}
