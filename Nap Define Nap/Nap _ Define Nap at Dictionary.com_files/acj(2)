@@ -1,0 +1,35 @@
+OX_8748420925({
+  "ads":{
+    "medium":"w",
+    "record_tmpl":"http://ask-d.openx.net/{medium}/1.0/{rtype}?ts={txn_state}",
+    "pixels":"http://us-u.openx.net/w/1.0/pd?plm=6&ph=846f5f57-8545-4d8d-8317-e88881c0cdc1",
+    "oxt": 287.148,
+    "adunits" : [
+      {
+        "auid":"537984159",
+        "chain_revenue":"",
+        "chain":[
+          {
+            "is_fallback":0,
+            "framed":1,
+            "ad_id":"537161987",
+            "adv_acct_id":"537073401",
+            "is_ng":1,
+            "adv_id":"152d07b1-da41-4c40-ad18-fe74c269534a:537073401",
+            "brand_id":"3714",
+            "cpipc":1614,
+            "auct_win_is_deal":0,
+            "pub_rev":"1614",
+            "width":"300",
+            "height":"250",
+            "html":"<iframe id='c054bd14' name='c054bd14' src='http://cas.ny.us.criteo.com/delivery/r/afr.php?did=58d83fdd9ed8b8f895349922eead3230&z=AAABWwy5e2dAzFtoXtsaygdOIFfqplAxpAoQYQ&u=%7CoECQTumucjiweRTlBh4X7dWmnvzwl9aIRc2I1Vs2dO8%3D%7C&c1=hiu7qeBX8BL93Hym_eH8SGJpsrPdBctzjmAawac44rnToH7eyAmEwYDKxYsfKp9vtAuZGqjEPKft0rLawTcp3JDnzjgvBoAb5qUtBXnW3bov4cSofFvWYZMXBOU_KdsSULh_xmkYotLnI1JyYRhDLm-WcoCFcD4agfNpeOxJrFjYgdL4U5TPLtrPDWpI8aeXdRObo5peJxK9EtamXk8ova1XlYjcRtX1obSpWeDvQxYBQzzaVOlGweL3nBVd35DCV1FfGPGfdsjDva6jtSHnGrgEFBg4rsgvEUHleeYJN7E' framespacing='0' frameborder='no' scrolling='no' width='300' height='250'></iframe>",
+            "target":"_blank",
+            "ts":"1fHJpZD05ZDM3YjE2Ny01OTA3LTRhMmEtYjg5MC1mZGZjZGVlYTBiZGJ8cnQ9MTQ5MDU2NzEzM3xhdWlkPTUzNzk4NDE1OXxhdW09RE1JRC5XRUJ8YXVwZj1kaXNwbGF5fHNpZD01MzcxOTU4NzF8cHViPTUzNzA3NTc3NnxwYz1VU0R8cmFpZD01MGNkNTgwYy0wZmQwLTQyOWEtODk2Ni0yM2E5YzFmOTA5NWN8cnM9MnxhaWQ9NTM3MTYxOTg3fHQ9MTJ8YXM9MzAweDI1MHxsaWQ9NTM3MTI0MTg3fG9pZD01MzcxMDEwMDV8cD0xOTAwfHByPTE2MTR8YXRiPTI0NTB8YWR2PTUzNzA3MzQwMXxhYz1VU0R8cG09UFJJQ0lORy5DUE18bT0xfGFpPTE1MmQwN2IxLWRhNDEtNGM0MC1hZDE4LWZlNzRjMjY5NTM0YXxtYz1VU0R8bXI9Mjg2fHBpPTE2MTR8bXVpPTkyZmM1OGEyLWE4OTAtNDg1Ny1hZTE5LThkZTYwNzRiOTc2N3xtYT02YTViMDBkMy0wY2IwLTRjODYtYTcwMi0wNmU2NDY1YTRlYTB8bXJ0PTE0OTA1NjcxMzN8bXJjPVNSVF9XT058bXdhPTUzNzA3MzQwMXxtd2JpPTM3MTR8bXdiPTI0NTB8bWFwPTE5MDB8ZWxnPTF8bW9jPVVTRHxtb3I9Mjg2fG1wYz1VU0R8bXByPTE2MTR8bXBmPTE1MDB8bW1mPTE1MDB8bXBuZj0xNTAwfG1tbmY9MTUwMHxwY3Y9MjAxNzAxMTJ8bW89T1h8ZWM9ODk2MzM1MXxtcHU9MTYxNHxtY3A9MTkwMHxhcXQ9cnRifGljPWQ3ZTZhYzZiLWVmZmItNDBhMy1hN2E4LTA2NjY1Nzk3MjE4MHxzYXM9MzAxeDI1MXxjdD0xfG13Yz01MzcxMDEwMDV8bXdwPTUzNzEyNDE4N3xtd2NyPTUzNzE2MTk4N3xybm49MXxtd2lzPTF8bXdwdD1vcGVucnRiX2pzb258dXI9TGt6YlFoRURaRnxiZHI9MXxsZD1hc3BjYS5vcmc",
+            "type":"html",
+            "ad_url":"<iframe id='c054bd14' name='c054bd14' src='http://cas.ny.us.criteo.com/delivery/r/afr.php?did=58d83fdd9ed8b8f895349922eead3230&z=AAABWwy5e2dAzFtoXtsaygdOIFfqplAxpAoQYQ&u=%7CoECQTumucjiweRTlBh4X7dWmnvzwl9aIRc2I1Vs2dO8%3D%7C&c1=hiu7qeBX8BL93Hym_eH8SGJpsrPdBctzjmAawac44rnToH7eyAmEwYDKxYsfKp9vtAuZGqjEPKft0rLawTcp3JDnzjgvBoAb5qUtBXnW3bov4cSofFvWYZMXBOU_KdsSULh_xmkYotLnI1JyYRhDLm-WcoCFcD4agfNpeOxJrFjYgdL4U5TPLtrPDWpI8aeXdRObo5peJxK9EtamXk8ova1XlYjcRtX1obSpWeDvQxYBQzzaVOlGweL3nBVd35DCV1FfGPGfdsjDva6jtSHnGrgEFBg4rsgvEUHleeYJN7E' framespacing='0' frameborder='no' scrolling='no' width='300' height='250'></iframe>"
+          }
+        ]
+      }
+    ]
+  }
+});

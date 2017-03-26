@@ -1,0 +1,17 @@
+OX_6635218092({
+  "ads":{
+    "medium":"w",
+    "record_tmpl":"http://ask-d.openx.net/{medium}/1.0/{rtype}?ts={txn_state}",
+    "pixels":"http://us-u.openx.net/w/1.0/pd?plm=6&ph=846f5f57-8545-4d8d-8317-e88881c0cdc1",
+    "oxt": 289.96,
+    "adunits" : [
+      {
+        "auid":"537984158",
+        "chain_revenue":"",
+        "size":"728x90",
+        "chain":[
+        ]
+      }
+    ]
+  }
+});

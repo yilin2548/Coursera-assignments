@@ -1,0 +1,10 @@
+yieldbot.updateState({"errors":[],"warnings":[],"pvi":"j0r95wlu2vdefuh4c5","optout":false,"minibar":"n","block_session":false,"subdomain_iframe":"ads-adseast-vpc","url_prefix":"http://ads-adseast-vpc.yldbt.com/m/","trending":{},"slots":[{"slot":"iac_dict_dictry_dw-728x90-top","size":"728x90","cpm":"250"}],"third_party_keys":{"hashed_ip":"efc82e0c0775fb8c75e7d587322941a2","vi":"j0r95wlvr2h8fycv4q","uuid":"iz1aop4qm9m5xbhi"}});
+var viPixel = new Image(1, 1);
+viPixel.onload = function () {};
+viPixel.src = 'https://idsync.rlcdn.com/456839.gif?partner_uid=vj0r95wlvr2h8fycv4q';
+var ipPixel = new Image(1, 1);
+ipPixel.onload = function () {};
+ipPixel.src = 'https://idsync.rlcdn.com/456839.gif?partner_uid=pefc82e0c0775fb8c75e7d587322941a2';
+var uuidPixel = new Image(1, 1);
+uuidPixel.onload = function () {};
+uuidPixel.src = 'https://idsync.rlcdn.com/456839.gif?partner_uid=uiz1aop4qm9m5xbhi';
