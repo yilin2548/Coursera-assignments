@@ -37,24 +37,24 @@ function ShoppingListCheckOffService() {
   // List of shopping items
   var toBuyItems = [
     {
-      name: "Milk",
-      quantity: "2"
+      name: "Chicken Legs",
+      quantity: "100"
     },
     {
-      name: "Donuts",
+      name: "Chicken Wings",
       quantity: "200"
     },
     {
-      name: "Cookies",
-      quantity: "300"
+      name: "Ham",
+      quantity: "A BIG ONE"
     },
     {
-      name: "Chocolate",
-      quantity: "5"
+      name: "Rice",
+      quantity: "100 lbs"
     },
     {
-      name: "Chicken Legs",
-      quantity: "100"
+      name: "Eggs",
+      quantity: "100 dozens"
     }
   ];
 
