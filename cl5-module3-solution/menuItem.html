@@ -1,9 +1,8 @@
-<br>
-<div>
+<div> <br><br><br>
   <ul>
     <li ng-repeat="item in items">
       {{ item.short_name}}, 
-      {{ item.name }},
+      {{ item.name }}
       <button class="btn btn-default" ng-click="onRemove({index: $index});">
       <span class="glyphicon glyphicon-remove"></span>
       Don't want this one!</button>
@@ -12,18 +11,4 @@
     </li>
   </ul>
 </div>
-<!-- 
-    <br>
-    <div>
-      <ul>
-        <li ng-repeat="item in items">
-          {{ item.short_name}}, 
-          {{ item.name }},
-          <button class="btn btn-default" ng-click="item.remove($index);">
-          <span class="glyphicon glyphicon-remove"></span>
-          Don't want this one!</button>
-          <br>
-          {{ item.description}}
-        </li>
-      </ul>
-    </div> -->
+<div class="alert alert-warning" ng-if="items.length==0"> Nothing found </div>

@@ -5,6 +5,12 @@ input[type="text"] {
   width: 200px;
   float: left;
 }
+
+li:nth-child(odd) { 
+  background: #dae0ea; 
+  border-radius: 4px
+}
+
 .narrow-button {
   float: left;
   margin-left: 10px;
