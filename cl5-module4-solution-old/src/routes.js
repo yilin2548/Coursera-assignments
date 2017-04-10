@@ -23,25 +23,19 @@ function RoutesConfig($stateProvider, $urlRouterProvider) {
   .state('categories', {
     url: '/categories',
     templateUrl: 'src/menuapp/templates/categories.template.html',
-    controller: 'MenuCategoryController as menu',
+    controller: 'MenuCategoryController as categories',
     resolve: {
-      categoriesList: ['MenuDataService', function (MenuDataService) {
-        var promise = MenuDataService.getAllCategories();
-        return promise.then(function (response){
-          return response.data;
-        })
-        .catch(function (error) {
-            console.log("Something went terribly wrong.");  
-        });
+      categories: ['MenuDataService', function (MenuDataService) {
+        return MenuDataService.getAllCategories();
       }]
     }
   })
 
   // Items
   .state('categories.items', {
-    url: '/{categoryIndex}/items',
+    url: '/item-detail/{itemId}',
     templateUrl: 'src/menuapp/templates/items.template.html',
-    controller: 'CategoryItemController as item'
+    controller: 'ItemController as items',
   });
 
 }
