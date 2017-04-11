@@ -4,12 +4,8 @@
 angular.module('MenuApp')
 .config(RoutesConfig);
 
-RoutesConfig.$inject = ['$stateProvider', '$urlRouterProvider', '$locationProvider'];
-function RoutesConfig($stateProvider, $urlRouterProvider, $locationProvider) {
-  $locationProvider.html5Mode({
-    enabled: true,
-    requireBase: false
-  });
+RoutesConfig.$inject = ['$stateProvider', '$urlRouterProvider'];
+function RoutesConfig($stateProvider, $urlRouterProvider) {
   // Redirect to home page if no other URL matches
   $urlRouterProvider.otherwise('/');
 
