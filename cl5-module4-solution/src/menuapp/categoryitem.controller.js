@@ -12,6 +12,7 @@ function CategoryItemController($stateParams, MenuDataService, categoriesList) {
     var promise = MenuDataService.getItemsForCategories(categoryShortName);
 	promise.then(function (response){
         item.items = response.data.menu_items;
+        item.categoryName = response.data.category.name;
     })
     .catch(function (error){
         console.log("Something went terribly wrong.");  

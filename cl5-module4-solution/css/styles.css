@@ -23,6 +23,5 @@ li[ui-sref]:hover {
 }
 
 li.active {
-  display: inline-block;
-  border: solid black 1px;
+  color: red;
 }
