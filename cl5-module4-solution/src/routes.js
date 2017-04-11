@@ -6,6 +6,10 @@ angular.module('MenuApp')
 
 RoutesConfig.$inject = ['$stateProvider', '$urlRouterProvider', '$locationProvider'];
 function RoutesConfig($stateProvider, $urlRouterProvider, $locationProvider) {
+  $locationProvider.html5Mode({
+    enabled: true,
+    requireBase: false
+  });
   // Redirect to home page if no other URL matches
   $urlRouterProvider.otherwise('/');
 
@@ -41,10 +45,6 @@ function RoutesConfig($stateProvider, $urlRouterProvider, $locationProvider) {
     url: '/{categoryIndex}/items',
     templateUrl: 'src/menuapp/templates/items.template.html',
     controller: 'CategoryItemController as item'
-  });
-  $locationProvider.html5Mode({
-    enabled: true,
-    requireBase: false
   });
 }
 
