@@ -1,0 +1,74 @@
+<div class="container">
+  <fieldset>
+    <legend>Sign Up</legend>
+    <form name='regForm' novalidate>
+
+      <input type="text" name="first_name" placeholder="First Name"
+        ng-model="signUpCtrl.user.first_name"
+        required>
+        {{ signUpCtrl.user.first_name }}
+        <span
+          ng-if="regForm.first_name.$error.required && regForm.first_name.$touched">
+          First name cannot be empty
+        </span>
+        <br>
+
+      <input type="text" name="last_name" placeholder="Last Name"
+        ng-model="signUpCtrl.user.last_name"
+        required>
+        {{ signUpCtrl.user.last_name }}
+        <span
+          ng-if="regForm.last_name.$error.required && regForm.last_name.$touched">
+          Last name cannot be empty
+        </span>
+        <br>
+
+      <input type="email" name="email" placeholder="Email"
+        ng-model="signUpCtrl.user.email"
+        required>
+        <span ng-if="regForm.email.$invalid && regForm.email.$touched">
+          Must be a valid email address: handle@domain format
+        </span>
+        <br>
+
+      <input type="text" name="phone" placeholder="Phone ###-###-####"
+        ng-model="signUpCtrl.user.phone"
+        pattern="(\d{3})-(\d{3})-(\d{4})">
+        <span ng-if="regForm.phone.$invalid && regForm.phone.$touched">
+          Phone must be in the format ###-###-####.
+        </span>
+        <br>
+
+      <input type="text" name="menu_item" placeholder="Favorite Manu Item"
+        ng-model="signUpCtrl.user.menu_item"
+        required>
+        {{ signUpCtrl.user.menu_item }}
+        <span
+          ng-if="regForm.menu_item.$error.required && regForm.menu_item.$touched">
+          Favorite menu item cannot be empty
+        </span>
+        <br>
+
+
+      <button
+        ng-disabled="regForm.$invalid"
+        ng-click="signUpCtrl.submit()">Submit</button>
+
+        <div style="margin-top: 10px;">
+          Form valid? {{ regForm.$valid }}
+        </div>
+    </form>
+  </fieldset>
+
+  <div id="info" ng-if="signUpCtrl.completed">
+    First name: {{ signUpCtrl.user.first_name}} <br>
+    Last name: {{ signUpCtrl.user.last_name}} <br>
+    Email: {{ signUpCtrl.user.email}} <br>
+    Phone: {{ signUpCtrl.user.phone }} <br>
+    Favorite Item: {{ signUpCtrl.fav_item}}
+  </div>
+
+  <div id="info" ng-if="!signUpCtrl.exist">
+    No such menu number exists
+  </div>
+</div>
