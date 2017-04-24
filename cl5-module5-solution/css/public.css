@@ -128,6 +128,7 @@ input {
 }
 button {
   font-size: 24px;
+  color: #3F0C1F;
 }
 
 .ng-touched.ng-valid {
