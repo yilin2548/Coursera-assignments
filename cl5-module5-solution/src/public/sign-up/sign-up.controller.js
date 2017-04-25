@@ -3,23 +3,22 @@
 angular.module('public')
 .controller('SignUpController', SignUpController);
 
-SignUpController.$inject = ['MenuService']
-function SignUpController(MenuService) {
+SignUpController.$inject = ['MenuService', 'InfoService']
+function SignUpController(MenuService, InfoService) {
   var $ctrl = this;
-
+  $ctrl.completed = true;
   $ctrl.submit = function () {
-    $ctrl.completed = true;
-
 	var promise = MenuService.getMenuItemDetail($ctrl.user.menu_item);
 	promise.then(function (data){
-	    $ctrl.fav_item = data.name;
-	    $ctrl.exist = true;
+	    $ctrl.user.fav_item = data;
+	    $ctrl.user.verified = true;
+	    InfoService.regCompleted = true;
+	    InfoService.user = $ctrl.user;
+	    $ctrl.message = "Your information has been saved!";
 	})
 	.catch(function (error){
-	 	$ctrl.exist = false;
-	 	$ctrl.completed = false;
-	 	$ctrl.fav_item = 'No such menu number exists '
-	    console.log("Something went terribly wrong.");  
+	 	$ctrl.message = "No such menu number exists!";
+	 	$ctrl.user.verified = false;
 	});
 
 

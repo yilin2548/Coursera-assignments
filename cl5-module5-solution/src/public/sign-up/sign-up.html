@@ -54,21 +54,13 @@
         ng-disabled="regForm.$invalid"
         ng-click="signUpCtrl.submit()">Submit</button>
 
-        <div style="margin-top: 10px;">
+<!--         <div style="margin-top: 10px;">
           Form valid? {{ regForm.$valid }}
-        </div>
+        </div> -->
     </form>
   </fieldset>
 
   <div id="info" ng-if="signUpCtrl.completed">
-    First name: {{ signUpCtrl.user.first_name}} <br>
-    Last name: {{ signUpCtrl.user.last_name}} <br>
-    Email: {{ signUpCtrl.user.email}} <br>
-    Phone: {{ signUpCtrl.user.phone }} <br>
-    Favorite Item: {{ signUpCtrl.fav_item}}
-  </div>
-
-  <div id="info" ng-if="!signUpCtrl.exist">
-    No such menu number exists
+    {{ signUpCtrl.message}}
   </div>
 </div>
