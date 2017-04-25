@@ -6,8 +6,9 @@ angular.module('public')
 SignUpController.$inject = ['MenuService', 'InfoService']
 function SignUpController(MenuService, InfoService) {
   var $ctrl = this;
-  $ctrl.completed = true;
+  $ctrl.completed = false;
   $ctrl.submit = function () {
+  	$ctrl.completed = true;
 	var promise = MenuService.getMenuItemDetail($ctrl.user.menu_item);
 	promise.then(function (data){
 	    $ctrl.user.fav_item = data;

@@ -1,66 +1,91 @@
 <div class="container">
   <fieldset>
+    <div class="alert alert-info alert-dismissable" ng-if="signUpCtrl.completed">
+      <a class="panel-close close" data-dismiss="alert">×</a> 
+      <i class="fa fa-coffee"></i>
+      {{ signUpCtrl.message}}
+    </div>
+
     <legend>Sign Up</legend>
-    <form name='regForm' novalidate>
+    <form class="form-horizontal" name='regForm' novalidate>
 
-      <input type="text" name="first_name" placeholder="First Name"
-        ng-model="signUpCtrl.user.first_name"
-        required>
-        {{ signUpCtrl.user.first_name }}
-        <span
-          ng-if="regForm.first_name.$error.required && regForm.first_name.$touched">
-          First name cannot be empty
-        </span>
-        <br>
+      <div class="form-group">
+        <label class="col-lg-3 control-label">First name:</label>
+        <div class="col-lg-8">
+          <input type="text" name="first_name" placeholder="John"
+          ng-model="signUpCtrl.user.first_name"
+          required>
+          <!-- {{ signUpCtrl.user.first_name }} -->
+          <span
+            ng-if="regForm.first_name.$error.required && regForm.first_name.$touched">
+            First name cannot be empty
+          </span>
+        </div>
+      </div>
 
-      <input type="text" name="last_name" placeholder="Last Name"
-        ng-model="signUpCtrl.user.last_name"
-        required>
-        {{ signUpCtrl.user.last_name }}
-        <span
-          ng-if="regForm.last_name.$error.required && regForm.last_name.$touched">
-          Last name cannot be empty
-        </span>
-        <br>
+      <div class="form-group">
+        <label class="col-lg-3 control-label">Last name:</label>
+        <div class="col-lg-8">
+          <input type="text" name="last_name" placeholder="Doe"
+          ng-model="signUpCtrl.user.last_name"
+          required>
+<!--           {{ signUpCtrl.user.last_name }} -->
+          <span
+            ng-if="regForm.last_name.$error.required && regForm.last_name.$touched">
+            Last name cannot be empty
+          </span>
+        </div>
+      </div>
 
-      <input type="email" name="email" placeholder="Email"
-        ng-model="signUpCtrl.user.email"
-        required>
-        <span ng-if="regForm.email.$invalid && regForm.email.$touched">
-          Must be a valid email address: handle@domain format
-        </span>
-        <br>
+      <div class="form-group">
+        <label class="col-lg-3 control-label">Email:</label>
+        <div class="col-lg-8">
+          <input type="email" name="email" placeholder="email@example.com"
+          ng-model="signUpCtrl.user.email"
+          required>
+          <span ng-if="regForm.email.$invalid && regForm.email.$touched">
+            Must be a valid email address: handle@domain format
+          </span>
+        </div>
+      </div>     
 
-      <input type="text" name="phone" placeholder="Phone ###-###-####"
-        ng-model="signUpCtrl.user.phone"
-        pattern="(\d{3})-(\d{3})-(\d{4})">
-        <span ng-if="regForm.phone.$invalid && regForm.phone.$touched">
-          Phone must be in the format ###-###-####.
-        </span>
-        <br>
-
-      <input type="text" name="menu_item" placeholder="Favorite Manu Item"
-        ng-model="signUpCtrl.user.menu_item"
-        required>
-        {{ signUpCtrl.user.menu_item }}
-        <span
-          ng-if="regForm.menu_item.$error.required && regForm.menu_item.$touched">
-          Favorite menu item cannot be empty
-        </span>
-        <br>
+      <div class="form-group">
+        <label class="col-lg-3 control-label">Phone#:</label>
+        <div class="col-lg-8">
+          <input type="text" name="phone" placeholder="###-###-####"
+          ng-model="signUpCtrl.user.phone"
+          requird
+          pattern="(\d{3})-(\d{3})-(\d{4})">
+          <span ng-if="regForm.phone.$invalid && regForm.phone.$touched">
+            Phone must be in the format ###-###-####.
+          </span>
+        </div>
+      </div>
 
 
-      <button
-        ng-disabled="regForm.$invalid"
-        ng-click="signUpCtrl.submit()">Submit</button>
+      <div class="form-group">
+        <label class="col-lg-3 control-label">Favorite Menu Item#</label>
+        <div class="col-lg-8">
+          <input type="text" name="menu_item" placeholder="A1"
+          ng-model="signUpCtrl.user.menu_item"
+          required>
+          <span
+            ng-if="regForm.menu_item.$error.required && regForm.menu_item.$touched">
+            Favorite menu item cannot be empty
+          </span>
+        </div>
+      </div>
 
-<!--         <div style="margin-top: 10px;">
-          Form valid? {{ regForm.$valid }}
-        </div> -->
+      <div class="form-group">
+        <label class="col-md-3 control-label"></label>
+        <div class="col-md-8">
+          <button  type="button" class="btn btn-default btn-lg" 
+          ng-disabled="regForm.$invalid"
+          ng-click="signUpCtrl.submit()">Submit</button>
+        </div>
+      </div>
+  
     </form>
   </fieldset>
 
-  <div id="info" ng-if="signUpCtrl.completed">
-    {{ signUpCtrl.message}}
-  </div>
 </div>

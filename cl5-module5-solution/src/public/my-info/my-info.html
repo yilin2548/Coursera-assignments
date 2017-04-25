@@ -1,23 +1,34 @@
 <div class="container">
-  <div id="info" ng-if="myInfoCtrl.verified">
-    First name: {{ myInfoCtrl.user.first_name}} <br>
-    Last name: {{ myInfoCtrl.user.last_name}} <br>
-    Email: {{ myInfoCtrl.user.email}} <br>
-    Phone: {{ myInfoCtrl.user.phone }} <br>
-    Favorite Item: {{ myInfoCtrl.user.fav_item.name}}
-    <div class="menu-item-photo">
-      <div>{{myInfoCtrl.fav_item.user.short_name}}</div>
-      <img class="img-responsive" width="250" height="150" ng-src="{{myInfoCtrl.basePath}}/images/{{myInfoCtrl.user.fav_item.short_name}}.jpg" alt="{{myInfoCtrl.user.fav_item.name}}">
-    </div>
-    <div class="menu-item-description col-sm-7">
-      <h3 class="menu-item-title">{{myInfoCtrl.user.fav_item.name}}</h3>
-      <p class="menu-item-details">{{myInfoCtrl.user.fav_item.description}}</p>
+  <div class="row" ng-if="myInfoCtrl.verified">
+    <div class="col-xs-12 col-sm-6 col-md-12">
+      <div class="row">
+        <div class="col-sm-6 col-md-4">
+          <div class="menu-item-photo">
+            <div>{{myInfoCtrl.user.fav_item.short_name}}</div>
+            <img class="img-responsive" width="250" height="150" ng-src="{{myInfoCtrl.basePath}}/images/{{myInfoCtrl.user.fav_item.short_name}}.jpg" alt="{{myInfoCtrl.user.fav_item.name}}">
+          </div>
+        </div>
+        <div class="col-sm-6 col-md-8">
+          <h4>{{ myInfoCtrl.user.first_name}} {{ myInfoCtrl.user.last_name}}</h4>
+          <p>
+              <i class="glyphicon glyphicon-envelope"></i> {{ myInfoCtrl.user.email}}
+              <br />
+              <i class="glyphicon glyphicon-earphone"></i> {{ myInfoCtrl.user.phone }}
+              <br />
+              <i class="glyphicon glyphicon-cutlery"></i> {{myInfoCtrl.user.fav_item.name}}
+          </p>
+          <div class="menu-item-description col-sm-7">
+            <p class="menu-item-details">{{myInfoCtrl.user.fav_item.description}}</p>
+          </div>
+        </div>
+      </div>
     </div>
   </div>
 
-  <div id="info" ng-if="!myInfoCtrl.verified">
+  <div class="alert alert-info alert-dismissable" ng-if="!myInfoCtrl.verified">
+    <i class="fa fa-coffee"></i>
     Not Signed Up Yet.
-    <a ui-sref="public.signup"> Sign up Now! </a>
+    <a ui-sref="public.signup" class="strong"> Sign up Now! </a>
   </div>
 
 </div>
